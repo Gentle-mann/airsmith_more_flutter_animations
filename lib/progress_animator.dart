@@ -13,7 +13,6 @@ class _ProgressAnimatorState extends State<ProgressAnimator>
   late Animation _animation;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _controller = AnimationController(
       vsync: this,

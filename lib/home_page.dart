@@ -1,5 +1,7 @@
+import 'package:airsmith_more_flutter_animations/bouncing_ball.dart';
 import 'package:airsmith_more_flutter_animations/expanding_circle.dart';
 import 'package:airsmith_more_flutter_animations/page_slide.dart';
+import 'package:airsmith_more_flutter_animations/page_transition.dart';
 import 'package:airsmith_more_flutter_animations/progress_animator.dart';
 import 'package:flutter/material.dart';
 
@@ -66,6 +68,24 @@ class _HomePageState extends State<HomePage> {
                 }));
               },
               child: const Text('Progress Animator'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return const PageTransition();
+                }));
+              },
+              child: const Text('Page Transition'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return const BouncingBall();
+                }));
+              },
+              child: const Text('Bouncing Ball'),
             ),
           ],
         ),
